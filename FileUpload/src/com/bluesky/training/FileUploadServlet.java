@@ -2,18 +2,12 @@ package com.bluesky.training;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,7 +33,6 @@ public class FileUploadServlet extends HttpServlet {
 		String fileName = null;
 		Connection conn;
 		Statement stmt = null;
-		ResultSet resultset;
 		try {
 			Class.forName("org.h2.Driver");
 			conn = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
@@ -70,7 +63,6 @@ public class FileUploadServlet extends HttpServlet {
 								+ " FAX VARCHAR(255),ADDRESS1 VARCHAR(255), ADDRESS2 VARCHAR(255), ADDRESS3 VARCHAR(255),CITY VARCHAR(255),"
 								+ " STATE VARCHAR(255), COUNTRY VARCHAR(255),ZIPCODE VARCHAR(255),ACTIVE VARCHAR(255)) "
 								+ "AS SELECT * FROM CSVREAD('" + UPLOAD_DIRECTORY + "/" + fileName + "')");
-				resultset = stmt.executeQuery("select * from Source");
 			} catch (Exception e) {
 
 				e.printStackTrace();
