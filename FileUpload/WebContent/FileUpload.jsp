@@ -4,13 +4,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>File Upload</title>
 </head>
-<body >
-		<form method="post" action="FileUploadServlet" enctype='multipart/form-data'>
+<body>
+	<div align="center">
+	<form method="post" action="fileUpload" enctype="multipart/form-data">
 			Select file to upload: <input type="file" name="uploadFile" />
 			<br/><br/> 
 			<input type="submit" value="Upload" />
 		</form>
+	</div>
 </body>
 </html>
