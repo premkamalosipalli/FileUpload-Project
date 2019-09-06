@@ -17,9 +17,9 @@ table, td, th {
 }
 </style>
 </head>
-<body>
-	<form action="Login.html" method="post">
-	        <h2>Click here to Go back:</h2> <input type="submit" value="Back">
+<body style="background-color:silver">
+	<form action="Welcome.html" method="post">
+	        <h2>Click here to Go back: <input type="submit" value="Back"></h2>
 	</form>
 	<%
 	Connection conn = null;

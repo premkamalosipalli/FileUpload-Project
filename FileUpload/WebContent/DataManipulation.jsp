@@ -6,11 +6,11 @@
 <meta charset="ISO-8859-1">
 <title>Data Manipulation</title>
 </head>
-<body>
-	<h1>Enter Your Address To Verify</h1>
-	
+<body style="background-color:silver">
+	<h1 align="center">Enter Your Address To Verify</h1>
+	<div align="center">
 	<form action="fileUpload" method="post" enctype="multipart/form-data">
-	Select file to upload: <input type="file" name="uploadFile" /> <br />
+	     Select file to upload: <input type="file" name="uploadFile" /> <br />
 		<table>
 			<tr>
 			<td>Enter the STLOC_ID:</td>
@@ -61,9 +61,10 @@
 			<td><input type="text" id="active" name="active"/></td>
 			</tr>
 			<tr>
-			<td colspan="2"><input type="submit" value="SUBMIT"/></td>
+			<td colspan="5" align="center"><input type="submit" value="SUBMIT"/></td>
 			</tr>
 		</table>		
 	</form>
+	</div>
 </body>
 </html>
