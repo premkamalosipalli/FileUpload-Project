@@ -72,7 +72,7 @@ table, td, th {
 	<td><%=resultset.getString(12)%></td>
 	</tr>
 	
-	<% } %>
+	<%}%>
 	</table>
 </body>
 </html>
