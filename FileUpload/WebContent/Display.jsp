@@ -19,7 +19,7 @@ table, td, th {
 </head>
 <body>
 	<form action="Login.html" method="post">
-	        Click here to Go back: <input type="submit" value="Back">
+	        <h2>Click here to Go back:</h2> <input type="submit" value="Back">
 	</form>
 	<%
 	Connection conn = null;
