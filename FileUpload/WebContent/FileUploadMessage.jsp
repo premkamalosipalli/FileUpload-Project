@@ -8,11 +8,8 @@
 </head>
 <body>
 	<h2>${message}</h2>
-	<table>
-		<tr>
-			<td>${data}</td>
-		</tr>
-	
-	</table>
-</body>
+	<form action="Login.html" method="post">
+	        Click here to Go back: <input type="submit" value="Back">
+	</form>
+	</body>
 </html>
