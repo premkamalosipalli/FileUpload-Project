@@ -8,5 +8,11 @@
 </head>
 <body>
 	<h2>${message}</h2>
+	<table>
+		<tr>
+			<td>${data}</td>
+		</tr>
+	
+	</table>
 </body>
 </html>
